@@ -1,8 +1,11 @@
-numero = int(input('digite um numero para saber se ele e primo: '))
-soma = 0
+numero = int(input('Digite um número para saber se ele é primo: '))
+divisores = 0
 
-for cont in range(2, numero):
-    if cont % numero == 0
-        soma += 1
-        print(soma)
-    
+for cont in range(1, numero + 1):
+    if numero % cont == 0:
+        divisores += 1
+
+if divisores == 2:
+    print(f'O número {numero} é primo.')
+else:
+    print(f'O número {numero} não é primo.')
