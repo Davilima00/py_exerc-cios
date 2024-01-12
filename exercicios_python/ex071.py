@@ -1,7 +1,7 @@
 # Simulador de Caixa Eletrônico
 
 print('=' * 30)
-print('{:^30}'.format('BANCO CEV'))
+print('{:^30}'.format('BANCO DAVI'))
 print('=' * 30)
 
 # Solicita ao usuário o valor que deseja sacar
@@ -12,7 +12,7 @@ total_cédulas = [0, 0, 0, 0]  # Lista para armazenar a quantidade de cédulas d
 
 # Loop para contar as cédulas
 for i in range(len(cédulas)):
-    while total >= cédulas[i]:
+    while total >= cédulas[i]: add ex0 
         total -= cédulas[i]
         total_cédulas[i] += 1
 
