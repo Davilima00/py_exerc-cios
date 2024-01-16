@@ -1,25 +1,15 @@
-lista = list()
-addp = list()
-addi = list()
+lista = [[], []]
 
 for c in range(7):
-    n = int(input('digite um numero '))
+    n = int(input('Digite um número: '))
     if n % 2 == 0:
-        addp.insert(0, n)
+        lista[0].append(n)
     else:
-        addi.insert(0, n)
+        lista[1].append(n)
 
-lista.append(addp[:])
-lista.append(addi[:])
+# Ordena as sublistas
+lista[0].sort()
+lista[1].sort()
 
-
-print("os numeros pares sao", end=' ')
-for d in lista[0]:
-    print(d, end=' ')
-
-print("\nos numeros impares sao", end=' ')
-for e in lista[1]:
-    print(e, end=' ')
-
-
-    
+print(f'Os números pares são {lista[0]}')
+print(f'Os números ímpares são {lista[1]}')
