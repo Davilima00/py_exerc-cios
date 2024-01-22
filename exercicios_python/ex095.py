@@ -1,4 +1,4 @@
-# registo de jogador
+# registo de jogador/time
 
 time = list()
 jogador = dict()
