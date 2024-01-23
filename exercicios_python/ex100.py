@@ -24,4 +24,4 @@ for _ in range(90):
     final = somar(numeros)
 
 
-
+print('FIM')
